@@ -22,14 +22,15 @@ struct RecipesView: View {
                 }
                 
                 
+                // dishes
                 Text("Avocado Dishes")
                     .modifier(RecipeSectionTitleModifier())
                 
-                // recipes
                 RecipeDishesView()
                     .frame(maxWidth: 640)
                 
                 
+                // facts
                 Text("Avocado Facts")
                     .modifier(RecipeSectionTitleModifier())
                 
@@ -43,6 +44,19 @@ struct RecipesView: View {
                     .padding(.leading, 60)
                     .padding(.trailing, 20)
                 }
+                
+                
+                // recipes
+                Text("Avocado Recipes")
+                    .modifier(RecipeSectionTitleModifier())
+                
+                VStack(alignment: .center, spacing: 20) {
+                    ForEach(recipesData) { item in
+                        RecipeCardView(recipe: item)
+                    }
+                }
+                .frame(maxWidth: 640)
+                .padding(.horizontal)
                 
                 
                 // footer
