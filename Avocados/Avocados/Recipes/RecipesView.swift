@@ -29,6 +29,22 @@ struct RecipesView: View {
                 RecipeDishesView()
                     .frame(maxWidth: 640)
                 
+                
+                Text("Avocado Facts")
+                    .modifier(RecipeSectionTitleModifier())
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(alignment: .top, spacing: 60) {
+                        ForEach(factsData) { item in
+                            RecipeFactsView(fact: item)
+                        }
+                    }
+                    .padding(.vertical)
+                    .padding(.leading, 60)
+                    .padding(.trailing, 20)
+                }
+                
+                
                 // footer
                 VStack(alignment: .center, spacing: 20) {
                     Text("All About Avocados")
