@@ -16,6 +16,8 @@
 		C7A50222293D15CA002E41C7 /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A50221293D15CA002E41C7 /* RecipesView.swift */; };
 		C7A50224293D15D4002E41C7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A50223293D15D4002E41C7 /* SettingsView.swift */; };
 		C7A50227293D1605002E41C7 /* RipeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A50226293D1605002E41C7 /* RipeningView.swift */; };
+		C7E81210293E21E000BFBC12 /* RecipesHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E8120F293E21E000BFBC12 /* RecipesHeaderView.swift */; };
+		C7E81212293E2D0300BFBC12 /* RecipesHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E81211293E2D0300BFBC12 /* RecipesHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		C7A50221293D15CA002E41C7 /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
 		C7A50223293D15D4002E41C7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C7A50226293D1605002E41C7 /* RipeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningView.swift; sourceTree = "<group>"; };
+		C7E8120F293E21E000BFBC12 /* RecipesHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesHeaderView.swift; sourceTree = "<group>"; };
+		C7E81211293E2D0300BFBC12 /* RecipesHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				C7A50221293D15CA002E41C7 /* RecipesView.swift */,
+				C7E8120F293E21E000BFBC12 /* RecipesHeaderView.swift */,
+				C7E81211293E2D0300BFBC12 /* RecipesHeader.swift */,
 			);
 			path = Recipes;
 			sourceTree = "<group>";
@@ -187,10 +193,12 @@
 			files = (
 				C7A5021E293D150D002E41C7 /* AvocadosView.swift in Sources */,
 				C7A50227293D1605002E41C7 /* RipeningView.swift in Sources */,
+				C7E81212293E2D0300BFBC12 /* RecipesHeader.swift in Sources */,
 				C7A50222293D15CA002E41C7 /* RecipesView.swift in Sources */,
 				C7A50224293D15D4002E41C7 /* SettingsView.swift in Sources */,
 				C7A5020B293D0E20002E41C7 /* AvocadosApp.swift in Sources */,
 				C7A5021B293D14D7002E41C7 /* AppView.swift in Sources */,
+				C7E81210293E21E000BFBC12 /* RecipesHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
