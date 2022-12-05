@@ -21,20 +21,25 @@ struct RecipesView: View {
                     }
                 }
                 
+                
+                Text("Avocado Dishes")
+                    .modifier(RecipeSectionTitleModifier())
+                
+                // recipes
+                RecipeDishesView()
+                    .frame(maxWidth: 640)
+                
                 // footer
                 VStack(alignment: .center, spacing: 20) {
                     Text("All About Avocados")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .fontDesign(.serif)
-                        .foregroundColor(Color("ColorGreenAdaptive"))
-                        .padding(8)
+                        .modifier(RecipeSectionTitleModifier())
                     
                     Text("Everything you wanted to know about avocados but were too afraid to ask.")
                         .font(.body)
                         .fontDesign(.serif)
                         .foregroundColor(.gray)
                         .multilineTextAlignment(.center)
+                        .frame(minHeight: 60)
                 }
                 .frame(maxWidth: 640)
                 .padding()
@@ -43,6 +48,18 @@ struct RecipesView: View {
         }
         .edgesIgnoringSafeArea(.all)
         .padding(0)
+    }
+}
+
+struct RecipeSectionTitleModifier: ViewModifier {
+    
+    func body(content: Content) -> some View {
+        content
+            .font(.title)
+            .fontWeight(.bold)
+            .fontDesign(.serif)
+            .foregroundColor(Color("ColorGreenAdaptive"))
+            .padding(8)
     }
 }
 
