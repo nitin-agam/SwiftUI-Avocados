@@ -124,5 +124,6 @@ struct RipeningCardView: View {
 struct RipeningCardView_Previews: PreviewProvider {
     static var previews: some View {
         RipeningCardView(ripening: ripeningData[0])
+            .previewLayout(.sizeThatFits)
     }
 }

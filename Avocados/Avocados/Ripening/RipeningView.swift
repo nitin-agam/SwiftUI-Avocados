@@ -13,6 +13,7 @@ struct RipeningView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             VStack {
                 Spacer()
+                    .frame(height: 120)
                 HStack(alignment: .center, spacing: 25) {
                     ForEach(ripeningData) { item in
                         RipeningCardView(ripening: item)

@@ -13,13 +13,15 @@ struct RecipesView: View {
             VStack(alignment: .center, spacing: 10) {
                 
                 // header
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack {
+                TabView {
+//                    HStack(alignment: .center, spacing: 0) {
                         ForEach(recipesHeaders) { item in
                             RecipesHeaderView(recipesHeader: item)
                         }
-                    }
+                  //  }
                 }
+                .frame(height: 320)
+                .tabViewStyle(.page)
                 
                 
                 // dishes
@@ -73,6 +75,7 @@ struct RecipesView: View {
                         .multilineTextAlignment(.center)
                         .frame(minHeight: 60)
                         .padding(.horizontal)
+                        .padding(.bottom, 20)
                 }
                 .frame(maxWidth: 640)
                 .padding(.bottom, 85)

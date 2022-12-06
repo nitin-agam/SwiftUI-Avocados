@@ -88,10 +88,10 @@ struct RecipeDetailView: View {
                     Button {
                         dismiss()
                     } label: {
-                        Image(systemName: "chevron.down.circle.fill")
+                        Image(systemName: "xmark.circle.fill")
                           .font(.title)
-                          .foregroundColor(Color.black)
-                          .shadow(radius: 4)
+                          .foregroundColor(Color.white)
+                          .shadow(radius: 6)
                     }
                     .padding(.trailing, 20)
                     .padding(.top, 12)

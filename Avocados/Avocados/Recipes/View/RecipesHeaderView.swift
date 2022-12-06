@@ -10,7 +10,7 @@ import SwiftUI
 struct RecipesHeaderView: View {
     
     var recipesHeader: RecipesHeader
-    @State private var showHeadline = false
+    @State private var showHeadline = true // make it false to enable animation
     
     private var slideInAnimation: Animation {
         Animation.spring(response: 1.5, dampingFraction: 0.5, blendDuration: 0.5)
@@ -52,10 +52,11 @@ struct RecipesHeaderView: View {
                 .background(Color("ColorBlackTransparentLight"))
             }
             .frame(width: 285, height: 105, alignment: .center)
-            .offset(x: -20, y: showHeadline ? 75 : 220)
+            .offset(x: -10, y: showHeadline ? 50 : 220)
             .animation(slideInAnimation, value: UUID())
             .onAppear(perform: {
-                self.showHeadline.toggle()
+                // disabling slide-in animation
+               // self.showHeadline.toggle()
             })
         }
         .frame(width: 480, height: 320, alignment: .center)

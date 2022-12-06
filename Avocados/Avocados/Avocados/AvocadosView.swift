@@ -32,7 +32,7 @@ struct AvocadosView: View {
                     .shadow(color: Color("ColorBlackTransparentDark"), radius: 5, x: 0, y: 8)
                 
                 Text("Creamy, green, and full of nutrients! Avocado is a powerhouse ingredient at any meal. Enjoy these handpicked avocado recipes for breakfast, lunch, dinner & more!")
-                    .font(.headline)
+                    .font(.title3)
                     .fontDesign(.serif)
                     .lineLimit(nil)
                     .foregroundColor(Color("ColorGreenLight"))
