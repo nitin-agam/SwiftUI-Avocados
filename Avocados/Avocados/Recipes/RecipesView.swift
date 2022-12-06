@@ -10,7 +10,7 @@ import SwiftUI
 struct RecipesView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            VStack(alignment: .center, spacing: 20) {
+            VStack(alignment: .center, spacing: 10) {
                 
                 // header
                 ScrollView(.horizontal, showsIndicators: false) {
@@ -28,6 +28,7 @@ struct RecipesView: View {
                 
                 RecipeDishesView()
                     .frame(maxWidth: 640)
+                    .padding(.bottom, 20)
                 
                 
                 // facts
@@ -40,10 +41,10 @@ struct RecipesView: View {
                             RecipeFactsView(fact: item)
                         }
                     }
-                    .padding(.vertical)
                     .padding(.leading, 60)
                     .padding(.trailing, 20)
                 }
+                .padding(.bottom, 20)
                 
                 
                 // recipes
@@ -57,10 +58,11 @@ struct RecipesView: View {
                 }
                 .frame(maxWidth: 640)
                 .padding(.horizontal)
+                .padding(.bottom, 20)
                 
                 
                 // footer
-                VStack(alignment: .center, spacing: 20) {
+                VStack(alignment: .center, spacing: 0) {
                     Text("All About Avocados")
                         .modifier(RecipeSectionTitleModifier())
                     
@@ -70,9 +72,9 @@ struct RecipesView: View {
                         .foregroundColor(.gray)
                         .multilineTextAlignment(.center)
                         .frame(minHeight: 60)
+                        .padding(.horizontal)
                 }
                 .frame(maxWidth: 640)
-                .padding()
                 .padding(.bottom, 85)
             }
         }

@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="lGc-UW-BO2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="lGc-UW-BO2">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jSu-G3-0Lt">
                                 <rect key="frame" x="71.666666666666686" y="251" width="250" height="350"/>
@@ -46,8 +45,12 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="lGc-UW-BO2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="07U-tL-5xj"/>
+                            <constraint firstItem="lGc-UW-BO2" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="E2T-na-ORo"/>
+                            <constraint firstItem="lGc-UW-BO2" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="OT4-3A-92G"/>
                             <constraint firstItem="jSu-G3-0Lt" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="cTQ-tr-qXx"/>
                             <constraint firstItem="jSu-G3-0Lt" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="owQ-vm-1qx"/>
+                            <constraint firstAttribute="bottom" secondItem="lGc-UW-BO2" secondAttribute="bottom" id="xWC-oG-zvG"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -25,12 +25,13 @@ struct RecipeCardView: View {
                         Spacer()
                         VStack {
                             Image(systemName: "bookmark")
-                                .font(.title)
-                                .fontWeight(.light)
+                                .font(.largeTitle)
+                                .fontWeight(.semibold)
                                 .imageScale(.small)
                                 .shadow(color: Color("ColorBlackTransparentLight"), radius: 2)
                                 .padding(.trailing, 20)
                                 .padding(.top, 22)
+                                .foregroundColor(.yellow)
                             Spacer()
                         }
                     }
@@ -39,7 +40,7 @@ struct RecipeCardView: View {
             VStack(alignment: .leading, spacing: 12) {
                 // title
                 Text(recipe.title)
-                    .font(.system(.title, design: .serif, weight: .bold))
+                    .font(.system(.title2, design: .serif, weight: .bold))
                     .foregroundColor(Color("ColorGreenMedium"))
                     .lineLimit(1)
                 
