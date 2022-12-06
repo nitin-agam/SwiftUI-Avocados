@@ -16,34 +16,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="lGc-UW-BO2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="lGc-UW-BO2">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avocado" translatesAutoresizingMaskIntoConstraints="NO" id="NgQ-6n-N92">
-                                <rect key="frame" x="71.666666666666686" y="301" width="250" height="250"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jSu-G3-0Lt">
+                                <rect key="frame" x="71.666666666666686" y="251" width="250" height="350"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avocado" translatesAutoresizingMaskIntoConstraints="NO" id="NgQ-6n-N92">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="02y-zO-cym"/>
+                                            <constraint firstAttribute="height" constant="250" id="cHc-zS-Zni"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVOCADOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2t-T1-uxk">
+                                        <rect key="frame" x="15.333333333333329" y="250" width="219" height="100"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="ZxF-Zd-TGj"/>
-                                    <constraint firstAttribute="height" constant="250" id="m7M-j7-fa5"/>
+                                    <constraint firstAttribute="height" constant="350" id="Sbu-Lm-X89"/>
+                                    <constraint firstAttribute="width" constant="250" id="sJr-Ee-N0X"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVOCADOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2t-T1-uxk">
-                                <rect key="frame" x="103.33333333333333" y="556" width="186.66666666666669" height="49.666666666666629"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="35"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="NgQ-6n-N92" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="2AQ-Y6-TYO"/>
-                            <constraint firstItem="NgQ-6n-N92" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="6i8-GX-9Y8"/>
-                            <constraint firstItem="H2t-T1-uxk" firstAttribute="top" secondItem="NgQ-6n-N92" secondAttribute="bottom" constant="5" id="BXZ-65-3Sr"/>
-                            <constraint firstItem="lGc-UW-BO2" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="EwV-w5-TRz"/>
-                            <constraint firstItem="lGc-UW-BO2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Kov-uJ-mNS"/>
-                            <constraint firstAttribute="bottom" secondItem="lGc-UW-BO2" secondAttribute="bottom" id="ZuV-Ld-3oO"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lGc-UW-BO2" secondAttribute="trailing" id="aA1-MM-kTb"/>
-                            <constraint firstItem="H2t-T1-uxk" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="clv-aM-49d"/>
+                            <constraint firstItem="jSu-G3-0Lt" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="cTQ-tr-qXx"/>
+                            <constraint firstItem="jSu-G3-0Lt" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="owQ-vm-1qx"/>
                         </constraints>
                     </view>
                 </viewController>

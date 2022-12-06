@@ -12,29 +12,31 @@ struct AppView: View {
         TabView {
             AvocadosView()
                 .tabItem {
-                    Image("tabicon-branch")
-                    Text("Avocados")
+                    Label("Avocados", image: "tabicon-branch")
                 }
             
             RecipesView()
                 .tabItem {
-                    Image("tabicon-book")
-                    Text("Recipes")
+                    Label("Recipes", image: "tabicon-book")
                 }
             
             RipeningView()
                 .tabItem {
-                    Image("tabicon-avocado")
-                    Text("Ripening")
+                    Label("Ripening", image: "tabicon-avocado")
                 }
             
             SettingsView()
                 .tabItem {
-                    Image("tabicon-settings")
-                    Text("Settings")
+                    Label("Settings", image: "tabicon-settings")
                 }
         }
-        .tint(.primary)
+        .tint(Color("ColorGreenAdaptive"))
+        .onAppear {
+            let appearance = UITabBarAppearance()
+            appearance.backgroundColor = UIColor(Color.white.opacity(0.1))
+            UITabBar.appearance().standardAppearance = appearance
+            UITabBar.appearance().scrollEdgeAppearance = appearance
+        }
     }
 }
 
