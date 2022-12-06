@@ -12,6 +12,10 @@ struct RipeningCardView: View {
     var ripening: Ripening
     @State private var slideInAnimation: Bool = false
     
+    private var upAnimation: Animation {
+        Animation.easeInOut(duration: 1.0)
+    }
+    
     var body: some View {
         VStack {
             
@@ -30,7 +34,7 @@ struct RipeningCardView: View {
                         .frame(width: 120, height: 120, alignment: .center)
                 )
                 .zIndex(1)
-                .animation(Animation.easeInOut(duration: 1))
+                .animation(upAnimation, value: UUID())
                 .offset(y: slideInAnimation ? 55 : -55)
             
             
