@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C79DB782293F118B000B2502 /* RipeningCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79DB781293F118B000B2502 /* RipeningCardView.swift */; };
+		C79DB784293F1306000B2502 /* Ripening.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79DB783293F1305000B2502 /* Ripening.swift */; };
 		C7A5020B293D0E20002E41C7 /* AvocadosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A5020A293D0E20002E41C7 /* AvocadosApp.swift */; };
 		C7A5020F293D0E22002E41C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7A5020E293D0E22002E41C7 /* Assets.xcassets */; };
 		C7A50212293D0E22002E41C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7A50211293D0E22002E41C7 /* Preview Assets.xcassets */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C79DB781293F118B000B2502 /* RipeningCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningCardView.swift; sourceTree = "<group>"; };
+		C79DB783293F1305000B2502 /* Ripening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ripening.swift; sourceTree = "<group>"; };
 		C7A50207293D0E20002E41C7 /* Avocados.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avocados.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A5020A293D0E20002E41C7 /* AvocadosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocadosApp.swift; sourceTree = "<group>"; };
 		C7A5020E293D0E22002E41C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				C7A50226293D1605002E41C7 /* RipeningView.swift */,
+				C79DB781293F118B000B2502 /* RipeningCardView.swift */,
+				C79DB783293F1305000B2502 /* Ripening.swift */,
 			);
 			path = Ripening;
 			sourceTree = "<group>";
@@ -244,6 +250,7 @@
 				C7A50227293D1605002E41C7 /* RipeningView.swift in Sources */,
 				C7E81212293E2D0300BFBC12 /* RecipesHeader.swift in Sources */,
 				C7E8121E293E485700BFBC12 /* RecipeCardView.swift in Sources */,
+				C79DB784293F1306000B2502 /* Ripening.swift in Sources */,
 				C7E8121C293E480300BFBC12 /* Recipe.swift in Sources */,
 				C7A50222293D15CA002E41C7 /* RecipesView.swift in Sources */,
 				C7E81225293E688F00BFBC12 /* RecipeDetailView.swift in Sources */,
@@ -255,6 +262,7 @@
 				C7E81216293E405A00BFBC12 /* RecipeFactsView.swift in Sources */,
 				C7E81218293E40CF00BFBC12 /* RecipeFact.swift in Sources */,
 				C7E81214293E32AD00BFBC12 /* RecipeDishesView.swift in Sources */,
+				C79DB782293F118B000B2502 /* RipeningCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
