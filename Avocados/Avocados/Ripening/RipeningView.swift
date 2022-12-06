@@ -8,8 +8,22 @@
 import SwiftUI
 
 struct RipeningView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(.horizontal, showsIndicators: false) {
+            VStack {
+                Spacer()
+                HStack(alignment: .center, spacing: 25) {
+                    ForEach(ripeningData) { item in
+                        RipeningCardView(ripening: item)
+                    }
+                }
+                .padding(.vertical)
+                .padding(.horizontal, 25)
+                Spacer()
+            }
+        }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

@@ -77,7 +77,7 @@ struct RipeningCardView: View {
                 Spacer()
                 
                 // ripeness
-                Text(ripening.ripeness)
+                Text(ripening.ripeness.uppercased())
                     .foregroundColor(.white)
                     .font(.callout)
                     .fontDesign(.serif)
