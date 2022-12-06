@@ -20,29 +20,23 @@ struct RecipeCardView: View {
             Image(recipe.image)
                 .resizable()
                 .scaledToFit()
-                .overlay {
-                    HStack {
-                        Spacer()
-                        VStack {
-                            Image(systemName: "bookmark")
-                                .font(.largeTitle)
-                                .fontWeight(.semibold)
-                                .imageScale(.small)
-                                .shadow(color: Color("ColorBlackTransparentLight"), radius: 2)
-                                .padding(.trailing, 20)
-                                .padding(.top, 22)
-                                .foregroundColor(.yellow)
-                            Spacer()
-                        }
-                    }
-                }
             
             VStack(alignment: .leading, spacing: 12) {
                 // title
-                Text(recipe.title)
-                    .font(.system(.title2, design: .serif, weight: .bold))
-                    .foregroundColor(Color("ColorGreenMedium"))
-                    .lineLimit(1)
+                HStack {
+                    Text(recipe.title)
+                        .font(.system(.title2, design: .serif, weight: .bold))
+                        .foregroundColor(Color("ColorGreenMedium"))
+                        .lineLimit(1)
+                    
+                    Spacer()
+                    
+                    Image(systemName: "bookmark")
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                        .imageScale(.small)
+                        .foregroundColor(.yellow)
+                }
                 
                 // headline
                 Text(recipe.headline)
