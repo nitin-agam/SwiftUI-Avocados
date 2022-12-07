@@ -75,7 +75,7 @@ struct RipeningCardView: View {
                 // description
                 Text(ripening.description)
                     .foregroundColor(Color("ColorGreenDark"))
-                    .fontWeight(.bold)
+                    .fontWeight(.semibold)
                     .lineLimit(nil)
                 
                 Spacer()
@@ -101,16 +101,16 @@ struct RipeningCardView: View {
                 Text(ripening.instruction)
                     .font(.footnote)
                     .foregroundColor(Color("ColorGreenLight"))
-                    .fontWeight(.bold)
+                    .fontWeight(.medium)
                     .lineLimit(3)
-                    .frame(width: 160)
+                    .frame(width: 200)
                 
                 Spacer()
             }
             .zIndex(0)
             .multilineTextAlignment(.center)
             .padding(.horizontal)
-            .frame(width: 260, height: 485, alignment: .center)
+            .frame(width: 300, height: 485, alignment: .center)
             .background(LinearGradient(gradient: Gradient(colors: [Color("ColorGreenLight"), Color("ColorGreenMedium")]), startPoint: .top, endPoint: .bottom))
             .cornerRadius(20)
         }

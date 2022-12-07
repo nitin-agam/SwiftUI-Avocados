@@ -85,10 +85,10 @@
 		C7A50209293D0E20002E41C7 /* Avocados */ = {
 			isa = PBXGroup;
 			children = (
-				C7A50225293D15EE002E41C7 /* Ripening */,
-				C7A50220293D159F002E41C7 /* Recipes */,
-				C7A5021F293D1598002E41C7 /* Settings */,
 				C7A5021C293D14ED002E41C7 /* Avocados */,
+				C7A50220293D159F002E41C7 /* Recipes */,
+				C7A50225293D15EE002E41C7 /* Ripening */,
+				C7A5021F293D1598002E41C7 /* Settings */,
 				C7A5020A293D0E20002E41C7 /* AvocadosApp.swift */,
 				C7A5020E293D0E22002E41C7 /* Assets.xcassets */,
 				C7A50210293D0E22002E41C7 /* Preview Content */,

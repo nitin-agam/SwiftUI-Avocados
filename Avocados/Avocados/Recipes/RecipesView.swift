@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct RecipesView: View {
+    
+    private var idiom: UIUserInterfaceIdiom { UIDevice.current.userInterfaceIdiom }
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .center, spacing: 10) {
                 
-                // header
                 TabView {
-//                    HStack(alignment: .center, spacing: 0) {
-                        ForEach(recipesHeaders) { item in
-                            RecipesHeaderView(recipesHeader: item)
-                        }
-                  //  }
+                    ForEach(recipesHeaders) { item in
+                        RecipesHeaderView(recipesHeader: item)
+                    }
                 }
-                .frame(height: 320)
+                .frame(height: idiom == .pad ? 420 : 320)
                 .tabViewStyle(.page)
                 
                 

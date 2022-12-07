@@ -9,6 +9,8 @@ import SwiftUI
 
 struct RecipesHeaderView: View {
     
+    private var idiom: UIUserInterfaceIdiom { UIDevice.current.userInterfaceIdiom }
+    
     var recipesHeader: RecipesHeader
     @State private var showHeadline = true // make it false to enable animation
     
@@ -25,41 +27,57 @@ struct RecipesHeaderView: View {
                 .resizable()
                 .scaledToFill()
             
-            HStack(alignment: .top, spacing: 0) {
+            VStack(alignment: .leading, spacing: 0) {
                 
-                Rectangle()
-                    .fill(Color("ColorGreenLight"))
-                    .frame(width: 4)
+                Spacer()
                 
-                VStack(alignment: .leading, spacing: 6) {
-                    Text(recipesHeader.headline)
-                        .font(.title)
-                        .fontDesign(.serif)
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .shadow(radius: 3)
+                HStack(alignment: .center, spacing: 0) {
                     
-                    Text(recipesHeader.subheadline)
-                        .font(.footnote)
-                        .lineLimit(2)
-                        .multilineTextAlignment(.leading)
-                        .shadow(radius: 3)
-                        .foregroundColor(.white)
+                    Spacer()
+                        .frame(width: 60)
+                    
+                    HStack(alignment: .top, spacing: 0) {
+                        
+                        Rectangle()
+                            .fill(Color("ColorGreenLight"))
+                            .frame(width: 4)
+                        
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text(recipesHeader.headline)
+                                .font(.title)
+                                .fontDesign(.serif)
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                                .shadow(radius: 3)
+                            
+                            Text(recipesHeader.subheadline)
+                                .font(.body)
+                                .lineLimit(2)
+                                .multilineTextAlignment(.leading)
+                                .shadow(radius: 3)
+                                .foregroundColor(.white)
+                        }
+                        .frame(width: 281, height: 105)
+                        .padding(.horizontal, 14)
+                        .padding(.vertical, 0)
+                        .background(Color("ColorBlackTransparentLight"))
+                    }
+                    .frame(width: 285, height: 105, alignment: .center)
+                   // .offset(x: -10, y: showHeadline ? 50 : 220)
+                    .animation(slideInAnimation, value: UUID())
+                    .onAppear(perform: {
+                        // disabling slide-in animation
+                       // self.showHeadline.toggle()
+                    })
+                    
+                    Spacer()
                 }
-                .frame(width: 281, height: 105)
-                .padding(.horizontal, 20)
-                .padding(.vertical, 0)
-                .background(Color("ColorBlackTransparentLight"))
+                
+                Spacer()
+                    .frame(height: self.idiom == .pad ? 130 : 50)
             }
-            .frame(width: 285, height: 105, alignment: .center)
-            .offset(x: -10, y: showHeadline ? 50 : 220)
-            .animation(slideInAnimation, value: UUID())
-            .onAppear(perform: {
-                // disabling slide-in animation
-               // self.showHeadline.toggle()
-            })
         }
-        .frame(width: 480, height: 320, alignment: .center)
+        .frame(height: idiom == .pad ? 420 : 320, alignment: .center)
     }
 }
 

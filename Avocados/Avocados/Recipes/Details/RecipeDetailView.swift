@@ -23,7 +23,7 @@ struct RecipeDetailView: View {
                     
                     // title
                     Text(recipe.title)
-                        .font(.title)
+                        .font(.largeTitle)
                         .fontWeight(.bold)
                         .fontDesign(.serif)
                         .foregroundColor(Color("ColorGreenAdaptive"))
@@ -40,7 +40,7 @@ struct RecipeDetailView: View {
                     Text("Ingredients")
                         .modifier(RecipeSectionTitleModifier())
                     
-                    VStack(alignment: .leading, spacing: 5) {
+                    VStack(alignment: .leading, spacing: 10) {
                         ForEach(recipe.ingredients, id: \.self) { item in
                             VStack(alignment: .leading, spacing: 8) {
                                 Text("👉  " + item)

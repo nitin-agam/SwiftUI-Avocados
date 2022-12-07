@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SettingsView: View {
     
+    private var idiom: UIUserInterfaceIdiom { UIDevice.current.userInterfaceIdiom }
+    
     @State private var enableNotification = true
     @State private var backgroundRefresh = false
     
@@ -22,7 +24,7 @@ struct SettingsView: View {
                     .resizable()
                     .scaledToFit()
                     .padding(.top)
-                    .frame(width: 100, height: 100, alignment: .center)
+                    .frame(width: idiom == .pad ? 180 : 100, height: idiom == .pad ? 180 : 100, alignment: .center)
                     .shadow(radius: 8)
                 
                 Text("Avocados".uppercased())
