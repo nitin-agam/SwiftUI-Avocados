@@ -32,8 +32,8 @@ A small application created in SwiftUI using Xcode 14 is shown here. In this app
 ### iPad Screenshots:
 
 <p float="left">
-  <img src="https://user-images.githubusercontent.com/12906999/206240270-925bfc4a-61e1-4d16-a76a-cc71e9317c0e.PNG" width="45%" />
-  <img src="https://user-images.githubusercontent.com/12906999/206240290-dd1fd117-71fa-4e4a-bd9c-70bc1757cd77.PNG" width="45%" />
+  <img src="https://user-images.githubusercontent.com/12906999/206252324-1637c2b1-e2ae-4c00-844e-670eaade3db5.png" width="46%" />
+  <img src="https://user-images.githubusercontent.com/12906999/206252475-11838f9c-58e9-4567-90b8-4ac50d6315da.png" width="46%" />
 </p>
 
 
